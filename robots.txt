@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Allow crawling of specific files
+Allow: /index.html
+Allow: /cv.html
+Allow: /sitemap.xml
+
+Sitemap: https://tinyrickk.github.io/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1

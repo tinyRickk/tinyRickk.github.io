@@ -1,52 +1,192 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>My CV</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://fontawesome.com/icons/google-scholar?f=brands&s=solid"></script>
+    <meta name="description" content="Aman Gupta - Curriculum Vitae. PhD candidate in Quantum Communications at UNSW Sydney.">
+    <meta name="keywords" content="CV, Resume, Aman Gupta, Quantum Communications, UNSW">
+    <meta name="author" content="Aman Gupta">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aman Gupta - CV">
+    <meta property="og:description" content="Curriculum Vitae of Aman Gupta - PhD researcher in Quantum Communications">
+    <meta property="og:url" content="https://tinyrickk.github.io/cv.html">
+    
+    <link rel="canonical" href="https://tinyrickk.github.io/cv.html">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%23007bff'>Q</text></svg>">
+    <link rel="manifest" href="manifest.json">
+    
+    <title>Aman Gupta - CV</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700|Open+Sans:400,600' rel='stylesheet'>
+    
+    <style>
+      :root {
+        --primary-color: #007bff;
+        --text-dark: #212529;
+        --bg-light: #f8f9fa;
+      }
+      
+      body {
+        font-family: 'Open Sans', sans-serif;
+        color: var(--text-dark);
+        background: var(--bg-light);
+      }
+      
+      h1, h2, h3 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+      }
+      
+      .navbar {
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        background-color: #2c3e50 !important;
+      }
+      
+      .navbar-brand {
+        font-weight: 700;
+      }
+      
+      .navbar a {
+        transition: color 0.3s ease;
+      }
+      
+      .navbar a:hover {
+        color: var(--primary-color) !important;
+      }
+      
+      .pdf-container {
+        background: white;
+        padding: 2rem;
+        margin: 2rem 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      
+      .pdf-viewer {
+        width: 100%;
+        height: 800px;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+      }
+      
+      .cv-info {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+      }
+      
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+        margin-top: 3rem;
+      }
+      
+      footer a {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+      
+      footer a:hover {
+        text-decoration: underline;
+      }
+      
+      @media (max-width: 768px) {
+        .pdf-viewer {
+          height: 500px;
+        }
+      }
+    </style>
 </head>
-
 <body>
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="cv.html">CV</a></li>
-            </ul>
-        </div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <i class="fas fa-cube"></i> Aman Gupta
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
+<!-- Main Content -->
+<div class="container py-5">
+  <div class="row">
+    <div class="col-lg-10 mx-auto">
+      
+      <div class="cv-info">
+        <h1 class="mb-3">Curriculum Vitae</h1>
+        <p class="mb-2"><strong>Aman Gupta</strong></p>
+        <p class="text-muted">PhD Candidate in Quantum Communications</p>
+        <p class="text-muted">School of Electrical Engineering and Telecommunications, UNSW Sydney</p>
+      </div>
+      
+      <!-- PDF Viewer -->
+      <div class="pdf-container">
+        <h2 class="mb-3">View or Download Resume</h2>
+        <div class="d-flex gap-2 mb-3 flex-wrap">
+          <a href="AmanResume.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+          <a href="AmanResume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">
+            <i class="fas fa-external-link-alt"></i> Open in New Tab
+          </a>
+        </div>
+        
+        <div class="pdf-viewer-wrapper">
+          <iframe class="pdf-viewer" src="AmanResume.pdf" title="Aman Gupta CV"></iframe>
+        </div>
+        
+        <div class="alert alert-info mt-3 mb-0">
+          <i class="fas fa-info-circle"></i> 
+          If the PDF viewer doesn't work, please <a href="AmanResume.pdf" download class="alert-link">download the PDF directly</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <iframe id="pdf-viewer" src="AmanResume.pdf" width="100%" height="1000"></iframe>
-    <script>
-        // Add some basic controls (optional)
-        const iframe = document.getElementById('pdf-viewer');
-        iframe.addEventListener('load', () => {
-            const pdfDoc = iframe.contentWindow.document;
-            // Add buttons for zoom in/out, page navigation, etc.
-            // ...
-        });
-    </script>
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p class="mb-2">&copy; <span id="year">2024</span> Aman Gupta. All rights reserved.</p>
+    <p class="mb-0">
+      <a href="https://github.com/tinyRickk" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> GitHub
+      </a> | 
+      <a href="https://www.linkedin.com/in/mr-amangupta/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a> |
+      <a href="https://scholar.google.com.au/citations?user=_6mZBnoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-book"></i> Google Scholar
+      </a>
+    </p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
-
 </html>
