@@ -1,0 +1,33 @@
+{
+  "last_updated": "2024-05-22T00:00:00Z",
+  "total_papers": 3,
+  "papers": [
+    {
+      "title": "An efficient and secure quantum blind signature-based electronic cash transaction scheme",
+      "authors": "Gupta, A., et al.",
+      "year": "2024",
+      "venue": "IET Quantum Communication",
+      "citation_count": 0,
+      "url": "https://doi.org/10.1049/qtc2.12109",
+      "type": "journal"
+    },
+    {
+      "title": "Quantum adiabatic optimization for nuclear ground state",
+      "authors": "Gupta, A., Singh, N., Singh, A., Abhishek, P. S., & Arumugam, P.",
+      "year": "2022",
+      "venue": "DAE Symposium on Nuclear Physics",
+      "citation_count": 2,
+      "url": "https://inspirehep.net/files/09d4a2e25cfb89670b7c6b01e2eef62a",
+      "type": "conference"
+    },
+    {
+      "title": "Exploring algorithms for quantum computing of atomic nuclei",
+      "authors": "Gupta, A., Siwach, P., & Arumugam, P.",
+      "year": "2021",
+      "venue": "DAE Symposium on Nuclear Physics",
+      "citation_count": 1,
+      "url": "http://sympnp.org/proceedings/65/A52.pdf",
+      "type": "conference"
+    }
+  ]
+}

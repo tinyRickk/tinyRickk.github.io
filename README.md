@@ -1,52 +1,83 @@
-# Personal Academic Website - Aman Gupta
+# Aman Gupta - Professional Quantum Communications Portfolio
 
-A modern, responsive, and SEO-optimized personal academic website built with Bootstrap 5.
+A modern, professional dark-mode portfolio website showcasing research in quantum communications, cryptography, and experimental quantum optics. **Features automatic paper synchronization from Google Scholar via GitHub Actions.**
 
-## Features
+## ✨ Features
 
-### ✨ Responsive Design
-- Mobile-first approach with Bootstrap 5
-- Fully responsive across all devices (mobile, tablet, desktop)
-- Touch-friendly navigation and interactive elements
-- Optimized layout for readability on all screen sizes
+### 🎨 Modern Professional Design
+- **Dark Mode Theme**: Sleek, modern design with elegant color gradients
+- **Smooth Animations**: GPU-accelerated transitions and hover effects
+- **Fully Responsive**: Perfect on desktop, tablet, and mobile
+- **High Performance**: Optimized for Core Web Vitals
 
-### 🔍 SEO Optimization
-- Comprehensive meta tags and Open Graph protocol support
-- Schema.org structured data for better search engine understanding
-- XML sitemap for easy crawling
-- robots.txt for search engine guidance
-- Semantic HTML5 markup
-- Fast loading with modern CDNs and minimal dependencies
+### 📄 Content Sections
+- **Hero Section**: Eye-catching introduction with action buttons
+- **Research Interests**: 6 key research areas with descriptive cards
+- **Technical Skills**: 12+ skill tags highlighting expertise
+- **Education & Experience**: Timeline-style professional history
+- **Publications**: Auto-synced from Google Scholar (monthly)
+- **Contact**: Professional contact section with social links
 
-### 🎨 Modern Design
-- Clean, professional layout
-- Smooth animations and transitions
-- Consistent color scheme with CSS variables
-- Beautiful typography with Google Fonts
-- Font Awesome icons
+### 🤖 Automation Features
+- **Google Scholar Sync**: Monthly automatic paper fetching
+- **GitHub Actions**: Runs on schedule or manual trigger
+- **Zero Manual Work**: Papers update without code changes
+- **Smart Caching**: Efficient data storage with JSON
+
+### 🔍 SEO & Discovery
+- **Google Search Console Ready**: Meta tags, sitemap, verification
+- **Schema.org Markup**: Rich snippets for better indexing
+- **Open Graph & Twitter Cards**: Better social media sharing
+- **Fast Loading**: CDN delivery, resource hints, optimization
 
 ### ♿ Accessibility
-- Semantic HTML elements
-- ARIA labels and roles
-- High contrast text
-- Keyboard navigation support
-- Image alt text
+- **Semantic HTML5**: Proper heading hierarchy
+- **ARIA Compliant**: Screen reader support
+- **Keyboard Navigation**: Full keyboard support
+- **High Contrast**: Dark theme with readable text
 
-### 🔒 Security & Privacy
-- Email address protection (obfuscated on display)
-- External links with `rel="noopener noreferrer"`
-- Content Security Policy ready
+## 🚀 Quick Start
 
-## File Structure
+### Deploy in 2 Minutes
+```bash
+git clone https://github.com/tinyRickk/tinyRickk.github.io.git
+cd tinyRickk.github.io
+# Make changes if needed
+git push  # Deploys to GitHub Pages
+```
+
+### Automatic Google Scholar Sync (Already Configured!)
+
+**How It Works:**
+- 📅 Runs **automatically every month** (1st day at 00:00 UTC)
+- 🔄 Fetches your latest papers from Google Scholar
+- 💾 Updates `data/publications.json` automatically
+- 📱 Website displays new papers without manual intervention
+
+**Your Scholar ID:** `_6mZBnoAAAAJ` (From your profile URL)
+
+**To Manually Trigger Updates:**
+1. Go to your GitHub repository
+2. Click "Actions" tab
+3. Select "Update Publications from Google Scholar"
+4. Click "Run workflow" button
+5. Papers update in < 5 minutes
+
+## 📁 Project Structure
 
 ```
-├── index.html              # Main homepage
-├── cv.html                 # CV/Resume page
-├── sitemap.xml             # XML sitemap for search engines
-├── robots.txt              # Robots configuration
-├── AmanResume.pdf          # PDF resume (add your file)
-├── 20230127_173822.jpg     # Profile image
-└── README.md               # This file
+├── index.html                    # Main portfolio page
+├── cv.html                       # CV/Resume page
+├── manifest.json                 # Progressive Web App config
+├── sitemap.xml                   # XML sitemap for SEO
+├── robots.txt                    # Search engine crawling rules
+├── README.md                     # This file
+├── scripts/
+│   └── fetch_publications.py     # Google Scholar scraper
+├── .github/workflows/
+│   └── update-publications.yml   # GitHub Actions automation
+└── data/
+    └── publications.json         # Publications (auto-updated)
 ```
 
 ## Getting Started

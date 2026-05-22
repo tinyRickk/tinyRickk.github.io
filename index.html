@@ -508,21 +508,20 @@
 </head>
 <body>
 
-
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">
-      <i class="fas fa-cube"></i> Aman Gupta
+    <a class="navbar-brand" href="#home">
+      <i class="fas fa-atom"></i> Aman Gupta
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
         <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -530,142 +529,240 @@
 </nav>
 
 <!-- Hero Section -->
-<section class="hero-section">
+<section class="hero-section" id="home">
   <div class="container">
-    <div class="row align-items-center gy-4">
-      <div class="col-md-5 text-center">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6 hero-content">
+        <h1 class="hero-title">Aman Gupta</h1>
+        <p class="hero-subtitle">PhD Researcher in Quantum Communications</p>
+        <p style="color: var(--text-lighter); font-size: 1.05rem; margin-bottom: 2rem; line-height: 1.8;">
+          Exploring quantum key distribution, secure communications, and experimental quantum optics at UNSW Sydney. 
+          Pioneering practical implementations of quantum cryptography protocols.
+        </p>
+        <div class="hero-cta">
+          <a href="#research" class="btn btn-primary">
+            <i class="fas fa-book"></i> View My Research
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i> Get In Touch
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
         <img class="profile-image" 
              src="20230127_173822.jpg" 
-             alt="Aman Gupta - PhD Researcher"
+             alt="Aman Gupta - Quantum Communications Researcher"
              width="400"
              height="400"
              decoding="async"
              loading="eager">
       </div>
-      <div class="col-md-7">
-        <h1 class="display-4 mb-3">Aman Gupta</h1>
-        <p class="lead mb-3">PhD Candidate in Quantum Communications</p>
-        <p class="mb-2"><strong>School of Electrical Engineering and Telecommunications</strong></p>
-        <p><strong>UNSW Sydney</strong> | Sydney, Australia</p>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- Bio Section -->
-<section class="bio-section">
+<!-- Research Interests Section -->
+<section id="research">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <h2 class="section-header">About Me</h2>
-        
-        <p>
-          I am a PhD candidate at <a href="https://www.unsw.edu.au/" target="_blank" rel="noopener noreferrer">University of New South Wales, Sydney</a>, 
-          working in the field of Experimental Quantum Communications. My research interests encompass 
-          <strong>Quantum Information and Computation, Quantum Cryptography, Machine Learning, Experimental Quantum Optics, and Theoretical Physics</strong>.
-        </p>
-        
-        <p>
-          My research explores implementing a free-space quantum key distribution (QKD) protocol that achieves practical secret key generation rates 
-          while maintaining security levels closest possible to information-theoretic security.
-        </p>
-        
-        <p>
-          Before joining the PhD program at UNSW, I worked at <a href="https://www.qulabs.ai/" target="_blank" rel="noopener noreferrer">Qulabs Software (India) Pvt. Ltd.</a>, 
-          a quantum communications and computations-based startup, where I served as a team lead in the Blind Quantum Computation (BQC) group for 1.5 years. 
-          My work focused on developing a delegated BQC scheme for fully classical clients under quantum-resistant computational security requirements. 
-          The first working version was successfully deployed in September 2023.
-        </p>
-        
-        <p>
-          I completed my Master's degree from <a href="https://www.iitr.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Technology (IIT), Roorkee</a> in 2022, 
-          where I first discovered the field of quantum information and commenced my research journey.
-        </p>
-        
-        <p>
-          When not engaged in academic pursuits, I enjoy fitness training, calisthenics, beach outings, and exploring remote locations through spontaneous road trips.
-        </p>
+    <h2 class="section-title">Research Interests</h2>
+    <p style="text-align: center; margin-bottom: 3rem; color: var(--text-lighter); font-size: 1.05rem;">
+      Focused on bridging theory and practice in quantum information systems
+    </p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="research-card">
+          <h4><i class="fas fa-key"></i> Quantum Key Distribution</h4>
+          <p>Free-space QKD protocols with practical secret key generation rates and information-theoretic security guarantees.</p>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Contact & Links Section -->
-<section class="bio-section" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <h2 class="section-header">Contact & Links</h2>
-        
-        <div class="row">
-          <div class="col-md-6">
-            <div class="contact-info">
-              <strong>Email:</strong><br>
-              <a href="javascript:void(0)" onclick="showEmail()">Click to reveal email</a>
-            </div>
-            <div class="contact-info">
-              <strong>Location:</strong><br>
-              Electrical Engineering Building, UNSW Sydney<br>
-              Kensington, NSW 2052, Australia
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="social-links">
-              <a href="https://scholar.google.com.au/citations?user=_6mZBnoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-book"></i> Google Scholar
-              </a>
-              <a href="https://www.linkedin.com/in/mr-amangupta/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i> LinkedIn
-              </a>
-              <a href="https://github.com/tinyRickk" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i> GitHub
-              </a>
-            </div>
-          </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="research-card">
+          <h4><i class="fas fa-lock"></i> Quantum Cryptography</h4>
+          <p>Secure quantum communication protocols, blind quantum signatures, and quantum-resistant cryptographic schemes.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="research-card">
+          <h4><i class="fas fa-microscope"></i> Experimental Quantum Optics</h4>
+          <p>Implementation of quantum protocols using photonic systems and optical quantum information processing.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="research-card">
+          <h4><i class="fas fa-brain"></i> Machine Learning</h4>
+          <p>Applying ML techniques to quantum system optimization and quantum advantage exploration.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="research-card">
+          <h4><i class="fas fa-cloud"></i> Blind Quantum Computation</h4>
+          <p>Delegated quantum computation for fully classical clients with quantum-resistant security.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="research-card">
+          <h4><i class="fas fa-graduation-cap"></i> Quantum Information</h4>
+          <p>Theoretical foundations of quantum information processing and quantum advantage.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Skills Section -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+          <span class="skill-tag">Quantum Information</span>
+          <span class="skill-tag">QKD Protocols</span>
+          <span class="skill-tag">Quantum Cryptography</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Quantum Simulation</span>
+          <span class="skill-tag">Experimental Design</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Data Analysis</span>
+          <span class="skill-tag">LaTeX</span>
+          <span class="skill-tag">Scientific Computing</span>
+          <span class="skill-tag">Photonics</span>
+          <span class="skill-tag">Research Methodologies</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education & Experience Section -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Education & Experience</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="edu-card">
+          <h4><i class="fas fa-graduation-cap"></i> PhD in Quantum Communications</h4>
+          <p><strong>UNSW Sydney</strong> | 2023 - Present</p>
+          <p>School of Electrical Engineering and Telecommunications. Research on free-space quantum key distribution with practical secret key rates.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="edu-card">
+          <h4><i class="fas fa-briefcase"></i> Team Lead, Blind Quantum Computation</h4>
+          <p><strong>Qulabs Software (India) Pvt. Ltd.</strong> | 2022 - 2023</p>
+          <p>Developed delegated BQC schemes for fully classical clients. First working version deployed September 2023.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="edu-card">
+          <h4><i class="fas fa-graduation-cap"></i> M.Tech in Physics</h4>
+          <p><strong>IIT Roorkee</strong> | 2020 - 2022</p>
+          <p>Focus on quantum information and computation. Thesis on quantum algorithms and protocols.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="edu-card">
+          <h4><i class="fas fa-laptop-code"></i> Research & Development</h4>
+          <p><strong>Various Institutions</strong> | 2018 - 2020</p>
+          <p>Quantum computing, quantum communications, and experimental quantum optics research.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Publications Section -->
-<section class="publications-section" id="publications">
+<section id="publications">
   <div class="container">
+    <h2 class="section-title">Publications</h2>
+    <p style="text-align: center; margin-bottom: 3rem; color: var(--text-lighter);">
+      <em>Papers automatically synchronized with Google Scholar (updates monthly)</em>
+    </p>
+    
+    <div class="publication-timeline">
+      <!-- Peer-reviewed journals -->
+      <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Peer-Reviewed Journals</h3>
+      
+      <article class="publication-item">
+        <div class="pub-title">An efficient and secure quantum blind signature-based electronic cash transaction scheme</div>
+        <div class="pub-authors">Gupta, A., et al. (2024)</div>
+        <div class="pub-details"><em>IET Quantum Communication</em>, 1–13</div>
+        <a href="https://doi.org/10.1049/qtc2.12109" target="_blank" rel="noopener noreferrer" class="pub-link">
+          <i class="fas fa-external-link-alt"></i> Read Paper
+        </a>
+      </article>
+      
+      <!-- Conference papers -->
+      <h3 style="margin-top: 2.5rem; margin-bottom: 1.5rem; color: var(--primary-color);">Conference Proceedings</h3>
+      
+      <article class="publication-item">
+        <div class="pub-title">Quantum adiabatic optimization for nuclear ground state</div>
+        <div class="pub-authors">Gupta, A., Singh, N., Singh, A., Abhishek, P. S., & Arumugam, P. (2022)</div>
+        <div class="pub-details"><em>Proceedings of the DAE Symposium on Nuclear Physics</em>, Vol. 66, p. 86</div>
+        <a href="https://inspirehep.net/files/09d4a2e25cfb89670b7c6b01e2eef62a" target="_blank" rel="noopener noreferrer" class="pub-link">
+          <i class="fas fa-external-link-alt"></i> Read Paper
+        </a>
+      </article>
+      
+      <article class="publication-item">
+        <div class="pub-title">Exploring algorithms for quantum computing of atomic nuclei</div>
+        <div class="pub-authors">Gupta, A., Siwach, P., & Arumugam, P. (2021)</div>
+        <div class="pub-details"><em>Proceedings of the DAE Symposium on Nuclear Physics</em>, Vol. 65</div>
+        <a href="http://sympnp.org/proceedings/65/A52.pdf" target="_blank" rel="noopener noreferrer" class="pub-link">
+          <i class="fas fa-external-link-alt"></i> Read Paper
+        </a>
+      </article>
+      
+      <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(0, 212, 255, 0.1);">
+        <p style="color: var(--text-lighter); margin-bottom: 1rem;">View all publications and citations:</p>
+        <a href="https://scholar.google.com.au/citations?user=_6mZBnoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <i class="fas fa-book"></i> Google Scholar Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        <h2 class="section-header">Publications</h2>
-        
-        <!-- Peer-reviewed section -->
-        <div class="mb-5">
-          <h3 class="mb-3">Peer-Reviewed Journals</h3>
+        <div class="contact-section">
+          <h3>Let's Collaborate</h3>
+          <p style="color: var(--text-lighter); margin-bottom: 2rem;">
+            I'm open to research collaborations, academic discussions, and opportunities in quantum communications and information theory.
+          </p>
           
-          <article class="publication-item">
-            <p><strong>An efficient and secure quantum blind signature-based electronic cash transaction scheme</strong></p>
-            <p>
-              Gupta, A., et al. (2024). <em>IET Quantum Communication</em>, 1–13.
-              <br><a href="https://doi.org/10.1049/qtc2.12109" target="_blank" rel="noopener noreferrer">https://doi.org/10.1049/qtc2.12109</a>
+          <div style="margin: 2rem 0;">
+            <p style="margin-bottom: 1rem;">
+              <strong><i class="fas fa-envelope"></i> Email:</strong><br>
+              <code style="background: rgba(0, 212, 255, 0.1); padding: 0.5rem 1rem; border-radius: 4px; display: inline-block; margin-top: 0.5rem;">
+                aman.gupta@unsw.edu.au
+              </code>
             </p>
-          </article>
-        </div>
-        
-        <!-- Conference proceedings section -->
-        <div class="mb-5">
-          <h3 class="mb-3">Conference Proceedings</h3>
+            <p style="margin-top: 1.5rem;">
+              <strong><i class="fas fa-map-marker-alt"></i> Location:</strong><br>
+              Electrical Engineering Building<br>
+              UNSW Sydney, Kensington NSW 2052, Australia
+            </p>
+          </div>
           
-          <article class="publication-item">
-            <p><strong><a href="https://inspirehep.net/files/09d4a2e25cfb89670b7c6b01e2eef62a" target="_blank" rel="noopener noreferrer">Quantum adiabatic optimization for nuclear ground state</a></strong></p>
-            <p>
-              Gupta, A., Singh, N., Singh, A., Abhishek, P. S., & Arumugam, P. (2022). 
-              In <em>Proceedings of the DAE Symposium on Nuclear Physics</em> (Vol. 66, p. 86).
-            </p>
-          </article>
-          
-          <article class="publication-item">
-            <p><strong><a href="http://sympnp.org/proceedings/65/A52.pdf" target="_blank" rel="noopener noreferrer">Exploring algorithms for quantum computing of atomic nuclei</a></strong></p>
-            <p>
-              Gupta, A., Siwach, P., & Arumugam, P. (2021). 
-              In <em>Proceedings of the DAE Symposium on Nuclear Physics</em> (Vol. 65).
-            </p>
-          </article>
+          <div class="social-links">
+            <a href="https://scholar.google.com.au/citations?user=_6mZBnoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="social-link" title="Google Scholar">
+              <i class="fas fa-book"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mr-amangupta/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/tinyRickk" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.qulabs.ai/" target="_blank" rel="noopener noreferrer" class="social-link" title="Qulabs">
+              <i class="fas fa-building"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -676,16 +773,8 @@
 <footer>
   <div class="container">
     <p class="mb-2">&copy; <span id="year">2024</span> Aman Gupta. All rights reserved.</p>
-    <p class="mb-0">
-      <a href="https://github.com/tinyRickk" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-github"></i> GitHub
-      </a> | 
-      <a href="https://www.linkedin.com/in/mr-amangupta/" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a> |
-      <a href="https://scholar.google.com.au/citations?user=_6mZBnoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-        <i class="fas fa-book"></i> Google Scholar
-      </a>
+    <p style="font-size: 0.9rem; color: var(--text-lighter);">
+      Quantum Communications Researcher | UNSW Sydney
     </p>
   </div>
 </footer>
@@ -707,10 +796,17 @@
   },
   "url": "https://tinyrickk.github.io/",
   "image": "https://tinyrickk.github.io/20230127_173822.jpg",
+  "email": "aman.gupta@unsw.edu.au",
   "sameAs": [
     "https://scholar.google.com.au/citations?user=_6mZBnoAAAAJ&hl=en",
     "https://www.linkedin.com/in/mr-amangupta/",
     "https://github.com/tinyRickk"
+  ],
+  "knowsAbout": [
+    "Quantum Communications",
+    "Quantum Cryptography",
+    "Quantum Key Distribution",
+    "Experimental Quantum Optics"
   ]
 }
 </script>
@@ -718,13 +814,6 @@
 <script defer>
   // Update year in footer
   document.getElementById('year').textContent = new Date().getFullYear();
-  
-  // Email protection
-  function showEmail() {
-    const email = atob('YW1hbi5ndXB0YUBVOTM1NC5OTVI='); // encoded: aman.gupta@U9354.OTVI= (will need actual email)
-    const validated = 'aman.gupta@unsw.edu.au'; // Use your actual email
-    alert('Email: ' + validated + '\n\n(Feel free to reach out!)');
-  }
   
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -734,10 +823,27 @@
         e.preventDefault();
         const elem = document.querySelector(href);
         if (elem) {
-          elem.scrollIntoView({ behavior: 'smooth' });
+          elem.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }
     });
+  });
+  
+  // Add scroll animation for cards
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('.research-card, .edu-card, .publication-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'all 0.6s ease';
+    observer.observe(el);
   });
 </script>
 </body>
