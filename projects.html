@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aman Gupta - Projects and Research Work">
+  <meta name="keywords" content="Projects, Research, Quantum Communications, Development">
+  <meta name="author" content="Aman Gupta">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aman Gupta | Projects">
+  <meta property="og:description" content="Explore my projects in quantum communications, software development, and research.">
+  <meta property="og:url" content="https://tinyrickk.github.io/projects.html">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://tinyrickk.github.io/projects.html">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%2300d4ff' /><stop offset='100%' style='stop-color:%230099cc' /></linearGradient></defs><circle cx='50' cy='50' r='42' fill='none' stroke='url(%23grad)' stroke-width='2' opacity='0.4'/><circle cx='50' cy='50' r='32' fill='none' stroke='url(%23grad)' stroke-width='2' opacity='0.6'/><circle cx='50' cy='50' r='6' fill='url(%23grad)' /><circle cx='50' cy='50' r='2.5' fill='%23ff006e'/><circle cx='80' cy='50' r='2.5' fill='%2300d4ff' opacity='0.9'/><circle cx='30' cy='50' r='2.5' fill='%2300d4ff' opacity='0.8'/><circle cx='50' cy='25' r='2.5' fill='%2300d4ff' opacity='0.85'/></svg>">
+  
+  <title>Projects | Aman Gupta</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,600,700|Fira+Code:400,500&display=swap' rel='stylesheet'>
+  
+  <style>
+    :root {
+      --primary-gradient: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+      --primary-color: #00d4ff;
+      --secondary-color: #ff006e;
+      --text-light: #e0e0e0;
+      --text-lighter: #b0b0b0;
+      --bg-dark: #0a0e27;
+      --bg-darker: #050812;
+      --card-bg: #1a1f3a;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+      color: var(--text-light);
+    }
+    
+    h1 { font-size: 2.8rem; font-weight: 700; }
+    h2 { font-size: 2rem; font-weight: 700; }
+    h3 { font-size: 1.4rem; font-weight: 600; }
+    
+    /* Navbar */
+    .navbar {
+      background: rgba(10, 14, 39, 0.95) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+      padding: 1rem 0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.4rem;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .nav-link {
+      color: var(--text-lighter) !important;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 0.5rem 1rem;
+    }
+    
+    .nav-link:hover {
+      color: var(--primary-color) !important;
+    }
+    
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary-gradient);
+      transition: width 0.3s ease;
+    }
+    
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    
+    /* Main content */
+    section {
+      padding: 4rem 0;
+      border-top: 1px solid rgba(0, 212, 255, 0.1);
+      min-height: 100vh;
+    }
+    
+    section:nth-child(even) {
+      background: rgba(0, 212, 255, 0.02);
+    }
+    
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+    
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--primary-gradient);
+      border-radius: 2px;
+    }
+    
+    /* Project Card */
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(0, 212, 255, 0.2);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary-color);
+      box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+    }
+    
+    .project-title {
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    
+    .project-description {
+      color: var(--text-lighter);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+    
+    .project-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    
+    .project-tag {
+      display: inline-block;
+      background: rgba(0, 212, 255, 0.15);
+      border: 1px solid rgba(0, 212, 255, 0.3);
+      color: var(--primary-color);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+    
+    .project-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .project-link:hover {
+      color: var(--secondary-color);
+      transform: translateX(5px);
+    }
+    
+    .placeholder-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: var(--card-bg);
+      border: 2px dashed rgba(0, 212, 255, 0.3);
+      border-radius: 12px;
+      margin: 2rem 0;
+    }
+    
+    .empty-icon {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      opacity: 0.5;
+    }
+    
+    .empty-text {
+      color: var(--text-lighter);
+      font-size: 1.1rem;
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--bg-darker);
+      border-top: 1px solid rgba(0, 212, 255, 0.1);
+      color: var(--text-lighter);
+      padding: 2rem 0;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    
+    footer a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    footer a:hover {
+      color: var(--secondary-color);
+    }
+    
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.1rem; }
+      
+      .section-title {
+        font-size: 1.8rem;
+      }
+      
+      section {
+        padding: 2rem 0;
+      }
+      
+      .placeholder-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <svg width="32" height="32" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px; display: inline-block; vertical-align: middle;">
+        <defs>
+          <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <circle cx="50" cy="50" r="42" fill="none" stroke="url(#logoGrad)" stroke-width="1.5" opacity="0.4"/>
+        <circle cx="50" cy="50" r="32" fill="none" stroke="url(#logoGrad)" stroke-width="1.5" opacity="0.6"/>
+        <circle cx="50" cy="50" r="6" fill="url(#logoGrad)" />
+        <circle cx="50" cy="50" r="3" fill="#ff006e"/>
+        <circle cx="80" cy="50" r="2.5" fill="#00d4ff" opacity="0.9"/>
+        <circle cx="30" cy="50" r="2.5" fill="#00d4ff" opacity="0.8"/>
+        <circle cx="50" cy="25" r="2.5" fill="#00d4ff" opacity="0.85"/>
+      </svg>
+      <span style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700; letter-spacing: 0.5px;">AG</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="posts.html">Posts</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Section -->
+<section>
+  <div class="container">
+    <h1 class="section-title">My Projects</h1>
+    <p style="text-align: center; margin-bottom: 3rem; color: var(--text-lighter); font-size: 1.05rem;">
+      Showcasing my work in quantum communications, software development, and research
+    </p>
+    
+    <div id="projects-container" class="placeholder-grid">
+      <div class="empty-state" style="grid-column: 1 / -1;">
+        <div class="empty-icon">
+          <i class="fas fa-folder-open"></i>
+        </div>
+        <div class="empty-text">
+          Projects coming soon! 🚀
+          <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-lighter);">
+            I'm working on documenting my projects here. Check back soon or explore my <a href="https://github.com/tinyRickk" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">GitHub profile</a> in the meantime.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Instructions for adding projects -->
+    <div style="margin-top: 4rem; padding: 2rem; background: rgba(0, 212, 255, 0.05); border: 1px solid rgba(0, 212, 255, 0.2); border-radius: 8px;">
+      <h4 style="color: var(--primary-color); margin-bottom: 1rem;">
+        <i class="fas fa-lightbulb"></i> To add projects:
+      </h4>
+      <ol style="color: var(--text-lighter); margin-bottom: 0;">
+        <li>Edit <code>projects.html</code></li>
+        <li>Add project cards with title, description, tags, and link</li>
+        <li>Each card follows the <code>.project-card</code> structure</li>
+        <li>Example structure provided below in the comments</li>
+      </ol>
+      <div style="margin-top: 1.5rem; padding: 1rem; background: var(--bg-dark); border-left: 3px solid var(--primary-color); border-radius: 4px; font-family: 'Fira Code', monospace; font-size: 0.85rem; overflow-x: auto;">
+        <pre style="margin: 0; color: var(--text-lighter);"><code>&lt;div class="project-card"&gt;
+  &lt;div class="project-title"&gt;
+    &lt;i class="fas fa-code"&gt;&lt;/i&gt; Project Name
+  &lt;/div&gt;
+  &lt;p class="project-description"&gt;
+    Project description goes here
+  &lt;/p&gt;
+  &lt;div class="project-tags"&gt;
+    &lt;span class="project-tag"&gt;Python&lt;/span&gt;
+    &lt;span class="project-tag"&gt;Quantum&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;a href="#" class="project-link"&gt;
+    View Project &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p class="mb-2">&copy; <span id="year">2024</span> Aman Gupta. All rights reserved.</p>
+    <p style="font-size: 0.9rem; color: var(--text-lighter);">
+      <a href="https://github.com/tinyRickk" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> Check out my GitHub
+      </a>
+    </p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
+<script defer>
+  // Update year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
